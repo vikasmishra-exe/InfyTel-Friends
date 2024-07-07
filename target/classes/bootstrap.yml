@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: FriendMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefix: config
+        defaultContext: application
+        profile-separator: '::'
+        format: YAML
+
+server:
+  port: 9300
